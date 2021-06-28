@@ -10,6 +10,10 @@
 
 #include <JuceHeader.h>
 #include "PluginProcessor.h"
+#include "KnobDesign.h"
+#include "TSlider.h"
+
+
 
 //==============================================================================
 /**
@@ -23,25 +27,26 @@ public:
     //==============================================================================
     void paint (juce::Graphics&) override;
     void resized() override;
-
 private:
+    KnobDesign knobDesign;
     // This reference is provided as a quick way for your editor to
     // access the processor object that created it.
-    juce::Slider driveSlider;
+//    juce::Slider driveSlider;
+    TSlider driveSlider;
     juce::Label driveLabel;
     std::unique_ptr<juce::AudioProcessorValueTreeState::SliderAttachment> driveSliderAttachment;
     
-    juce::Slider rangeSlider;
+    TSlider rangeSlider;
     juce::Label rangeLabel;
 
     std::unique_ptr<juce::AudioProcessorValueTreeState::SliderAttachment> rangeSliderAttachment;
 
-    juce::Slider blendSlider;
+    TSlider blendSlider;
     juce::Label blendLabel;
 
     std::unique_ptr<juce::AudioProcessorValueTreeState::SliderAttachment> blendSliderAttachment;
 
-    juce::Slider volumeSlider;
+    TSlider volumeSlider;
     juce::Label volumeLabel;
 
     std::unique_ptr<juce::AudioProcessorValueTreeState::SliderAttachment> volumeSliderAttachment;

@@ -12,6 +12,8 @@
       <FILE id="rMWYDP" name="PluginEditor.cpp" compile="1" resource="0"
             file="Source/PluginEditor.cpp"/>
       <FILE id="ZOei8g" name="PluginEditor.h" compile="0" resource="0" file="Source/PluginEditor.h"/>
+      <FILE id="aSDdHs" name="KnobDesign.h" compile="0" resource="0" file="Source/KnobDesign.h"/>
+      <FILE id="bYfYJw" name="TSlider.h" compile="0" resource="0" file="Source/TSlider.h"/>
     </GROUP>
   </MAINGROUP>
   <JUCEOPTIONS JUCE_STRICT_REFCOUNTEDPOINTER="1" JUCE_VST3_CAN_REPLACE_VST2="0"/>
