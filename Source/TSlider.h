@@ -18,7 +18,7 @@ class TSlider : public juce::Slider
     public:
     TSlider(){
     setSliderStyle(juce::Slider::SliderStyle::RotaryHorizontalVerticalDrag);
-    setTextBoxStyle(juce::Slider::TextBoxBelow, true, 100, 50);
-//   setLookAndFeel(&knobDesign);
+    setTextBoxStyle(juce::Slider::TextBoxBelow, true, 60, 50);
+        
     }
 };

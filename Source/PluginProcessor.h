@@ -52,10 +52,19 @@ public:
     //==============================================================================
     void getStateInformation (juce::MemoryBlock& destData) override;
     void setStateInformation (const void* data, int sizeInBytes) override;
-    
+    void updateFilter(float freq);
     juce::AudioProcessorValueTreeState apvts;
 private:
+    
+
+    void reset() override;
+
+
+    
+    juce::dsp::ProcessorDuplicator<juce::dsp::IIR::Filter<float>, juce::dsp::IIR::Coefficients<float>>filter;
+
     juce::AudioProcessorValueTreeState::ParameterLayout createParameters();
+    
     //==============================================================================
     JUCE_DECLARE_NON_COPYABLE_WITH_LEAK_DETECTOR (TistortionAudioProcessor)
 };
